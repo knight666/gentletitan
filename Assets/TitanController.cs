@@ -5,6 +5,8 @@ using UnityEngine;
 public class TitanController : MonoBehaviour {
 
     public float m_movementSpeed = 3.0f;
+    public float m_wood = 0.0f;
+    public float m_food = 0.0f;
 
 	// Use this for initialization
 	void Start () {

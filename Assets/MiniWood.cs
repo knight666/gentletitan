@@ -14,13 +14,17 @@ public class MiniWood : MonoBehaviour
     Button button1;
     Button button2;
     Button button3;
+    bool activeCheck = true;
+    public Text text;
+
+    public GameObject Titan;
 
 
 
     // Use this for initialization
     void Start()
     {
-
+        text.enabled = false;
     }
 
     // Update is called once per frame
@@ -51,7 +55,10 @@ public class MiniWood : MonoBehaviour
             button3.interactable = false;
         }
 
-        AddResource();
+        if (activeCheck == true){
+            AddResource();
+        }
+        
     }
 
     void AddResource()
@@ -61,14 +68,36 @@ public class MiniWood : MonoBehaviour
         button2 = MyButton2.GetComponent<Button>();
         button3 = MyButton3.GetComponent<Button>();
 
+        
+
         if (button.interactable == false && button1.interactable == false && button2.interactable == false && button3.interactable == false)
         {
-            button.interactable = true;
-            button1.interactable = true;
-            button2.interactable = true;
-            button3.interactable = true;
+            activeCheck = false;
+            //modify wood amount on titan
+            Titan.GetComponent<TitanController>().m_wood += 1;
+
+            StartCoroutine(ShowMessage("+1 Wood", 1));
+
         }
     }
+
+
+    IEnumerator ShowMessage(string message, float delay)
+    {
+       
+        text.text = message;
+        text.enabled = true;
+        yield return new WaitForSeconds(delay);
+        text.enabled = false;
+
+        button.interactable = true;
+        button1.interactable = true;
+        button2.interactable = true;
+        button3.interactable = true;
+
+        activeCheck = true;
+    }
+
 
 }
    
