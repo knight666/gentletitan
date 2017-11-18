@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: 77ad0ffceba0298458d573869a36d30b
+timeCreated: 1511013730
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: titan_0
+    21300002: titan_1
+    21300004: titan_2
+    21300006: titan_3
+    21300008: titan_4
+    21300010: titan_5
+    21300012: titan_6
+    21300014: titan_7
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: titan_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 630
+        width: 188
+        height: 347
+      alignment: 9
+      pivot: {x: 0.66330814, y: 0.18772408}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: titan_1
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 694
+        width: 340
+        height: 233
+      alignment: 9
+      pivot: {x: 0.080371276, y: 0.089194104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: titan_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 435
+        width: 170
+        height: 97
+      alignment: 9
+      pivot: {x: 0.8505757, y: 0.2765783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: titan_3
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 320
+        width: 284
+        height: 355
+      alignment: 9
+      pivot: {x: 0.5, y: 0.22019783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: titan_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 40
+        width: 243
+        height: 275
+      alignment: 9
+      pivot: {x: 0.82701164, y: 0.84806496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: titan_5
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 116
+        width: 79
+        height: 148
+      alignment: 9
+      pivot: {x: 0.6600249, y: 0.84167534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: titan_6
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 101
+        width: 79
+        height: 157
+      alignment: 9
+      pivot: {x: 0.3399743, y: 0.82208884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: titan_7
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 47
+        width: 216
+        height: 283
+      alignment: 9
+      pivot: {x: 0.19063936, y: 0.8509887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
