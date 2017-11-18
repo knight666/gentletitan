@@ -1390,8 +1390,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9fb28a6cc3190b41a191a5a4fbee5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_prefabMiniGame: {fileID: 0}
-  m_movementSpeed: 10
+  m_prefabMiniGame: {fileID: 1636230950932826, guid: b472b7136c2856a40bb99c5851e9d5ca,
+    type: 2}
+  m_movementSpeed: 2
   m_wood: 0
   m_food: 0
 --- !u!61 &338780918
@@ -3488,12 +3489,12 @@ Prefab:
     - target: {fileID: 224386208245807344, guid: 05c1f6292bad91d4dae2bb7723c391fc,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2249.908
+      value: 1825.908
       objectReference: {fileID: 0}
     - target: {fileID: 224386208245807344, guid: 05c1f6292bad91d4dae2bb7723c391fc,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1288
+      value: 860
       objectReference: {fileID: 0}
     - target: {fileID: 114113674647912354, guid: 05c1f6292bad91d4dae2bb7723c391fc,
         type: 2}
@@ -3503,12 +3504,12 @@ Prefab:
     - target: {fileID: 224894552408111428, guid: 05c1f6292bad91d4dae2bb7723c391fc,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -462.80002
+      value: -356.8
       objectReference: {fileID: 0}
     - target: {fileID: 224894552408111428, guid: 05c1f6292bad91d4dae2bb7723c391fc,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 248.29999
+      value: 141.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05c1f6292bad91d4dae2bb7723c391fc, type: 2}
