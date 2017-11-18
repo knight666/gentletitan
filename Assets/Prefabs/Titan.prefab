@@ -103,8 +103,6 @@ GameObject:
   - component: {fileID: 114074689280521818}
   - component: {fileID: 61971650876565718}
   - component: {fileID: 50786124516089250}
-  - component: {fileID: 61876235114589574}
-  - component: {fileID: 114207467315323584}
   - component: {fileID: 95824539429155354}
   m_Layer: 0
   m_Name: Titan
@@ -336,31 +334,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61876235114589574
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1585886869983944}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!61 &61971650876565718
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -418,22 +391,7 @@ MonoBehaviour:
     type: 2}
   m_prefabFood: {fileID: 1539074755596444, guid: ae0b62d5230845648886f67000854abc,
     type: 2}
-  m_movementSpeed: 3
-  m_wood: 0
-  m_food: 0
---- !u!114 &114207467315323584
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1585886869983944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9fb28a6cc3190b41a191a5a4fbee5d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_prefabMiniGame: {fileID: 0}
-  m_movementSpeed: 10
+  m_movementSpeed: 1.5
   m_wood: 0
   m_food: 0
 --- !u!212 &212016544715601072
