@@ -263,6 +263,51 @@ Prefab:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 224575031550164548, guid: b472b7136c2856a40bb99c5851e9d5ca,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 196
+      objectReference: {fileID: 0}
+    - target: {fileID: 224575031550164548, guid: b472b7136c2856a40bb99c5851e9d5ca,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224575031550164548, guid: b472b7136c2856a40bb99c5851e9d5ca,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224575031550164548, guid: b472b7136c2856a40bb99c5851e9d5ca,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114323888344778750, guid: b472b7136c2856a40bb99c5851e9d5ca,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114323888344778750, guid: b472b7136c2856a40bb99c5851e9d5ca,
+        type: 2}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114323888344778750, guid: b472b7136c2856a40bb99c5851e9d5ca,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114323888344778750, guid: b472b7136c2856a40bb99c5851e9d5ca,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114323888344778750, guid: b472b7136c2856a40bb99c5851e9d5ca,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b472b7136c2856a40bb99c5851e9d5ca, type: 2}
   m_IsPrefabParent: 0
@@ -324,6 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9fb28a6cc3190b41a191a5a4fbee5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_prefabMiniGame: {fileID: 0}
   m_movementSpeed: 3
   m_wood: 0
   m_food: 0
