@@ -14,6 +14,7 @@ public class CameraController : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.position = m_titan.transform.position + m_offset;
+        Vector3 target = m_titan.transform.position + m_offset;
+        transform.position += (target - transform.position) * 0.97f * Time.deltaTime;
     }
 }
