@@ -17,6 +17,13 @@ public class ChildController : MonoBehaviour
     public float m_danger = 0.0f;
     public float m_dangerSpeed = 1.0f;
 
+    public Text endGame;
+
+    void Start()
+    {
+        endGame.enabled = false;
+    }
+
     void LateUpdate()
     {
         m_hunger += m_hungerSpeed * Time.deltaTime;
@@ -51,11 +58,14 @@ public class ChildController : MonoBehaviour
             {
                 StartCoroutine(AddWood(titan));
             }
+        }
+    }
 
-            if (titan.m_food > 0.0f)
-            {
-                StartCoroutine(AddFood(titan));
-            }
+    void EndGame()
+    {
+        if (m_hunger >= 100.0f || m_cold >= 100.0f || m_danger >= 100.0f)
+        {
+            endGame.enabled = true;
         }
     }
 
@@ -66,22 +76,11 @@ public class ChildController : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
 
             m_cold -= m_coldSpeed * 3.0f;
+            m_textCold.GetComponent<Text>().text = "Cold: " + m_cold.ToString("f0");
+
             titan.m_wood -= 1.0f;
         }
 
         titan.m_wood = 0.0f;
-    }
-
-    IEnumerator AddFood(TitanController titan)
-    {
-        while (titan.m_food > 0.1f)
-        {
-            yield return new WaitForSeconds(0.2f);
-
-            m_hunger -= m_hungerSpeed * 3.0f;
-            titan.m_food -= 1.0f;
-        }
-
-        titan.m_food = 0.0f;
     }
 }
