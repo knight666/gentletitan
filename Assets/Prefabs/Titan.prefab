@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 50786124516089250}
   m_Layer: 0
   m_Name: Titan
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -339,7 +339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9fb28a6cc3190b41a191a5a4fbee5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_prefabMiniGame: {fileID: 1636230950932826, guid: b472b7136c2856a40bb99c5851e9d5ca,
+  m_prefabWood: {fileID: 1636230950932826, guid: b472b7136c2856a40bb99c5851e9d5ca,
+    type: 2}
+  m_prefabFood: {fileID: 1539074755596444, guid: ae0b62d5230845648886f67000854abc,
     type: 2}
   m_movementSpeed: 3
   m_wood: 0

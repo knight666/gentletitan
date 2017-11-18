@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class TitanController : MonoBehaviour {
 
-    public GameObject m_prefabMiniGame;
+    public GameObject m_prefabWood;
+    public GameObject m_prefabFood;
     public float m_movementSpeed = 3.0f;
     public float m_wood = 0.0f;
     public float m_food = 0.0f;
@@ -38,16 +39,31 @@ public class TitanController : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D coll)
     {
         //Debug.Log(coll);
-        if (coll.gameObject.tag == "wood")
+        if (coll.gameObject.tag == "wood" &&
+            m_miniGame == null)
         {
-            m_miniGame = GameObject.Instantiate(m_prefabMiniGame);
+            m_miniGame = GameObject.Instantiate(m_prefabWood);
             m_miniGame.GetComponent<MiniWood>().Titan = gameObject;
+        }
+
+        if (coll.gameObject.tag == "food" &&
+            m_miniGame == null)
+        {
+            m_miniGame = GameObject.Instantiate(m_prefabFood);
+            m_miniGame.GetComponent<MiniFood>().Titan = gameObject;
         }
     }
 
     void OnTriggerExit2D(Collider2D coll)
     {
         if (coll.gameObject.tag == "wood" &&
+            m_miniGame != null)
+        {
+            GameObject.Destroy(m_miniGame);
+            m_miniGame = null;
+        }
+
+        if (coll.gameObject.tag == "food" &&
             m_miniGame != null)
         {
             GameObject.Destroy(m_miniGame);
