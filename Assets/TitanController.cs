@@ -1,12 +1,17 @@
 ﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TitanController : MonoBehaviour {
 
     public GameObject m_prefabWood;
     public GameObject m_prefabFood;
+    public GameObject m_textEnergy;
+    public GameObject m_textFood;
+    public GameObject m_textWood;
     public float m_movementSpeed = 3.0f;
+    public float m_energy = 100.0f;
     public float m_wood = 0.0f;
     public float m_food = 0.0f;
 
@@ -23,12 +28,29 @@ public class TitanController : MonoBehaviour {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position += Vector3.left * m_movementSpeed * Time.deltaTime;
+            m_energy -= 0.1f;
         }
-
-        if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.position += Vector3.right * m_movementSpeed * Time.deltaTime;
+            m_energy -= 0.1f;
         }
+        else
+        {
+            m_energy += 0.025f;
+        }
+    }
+
+    void LateUpdate()
+    {
+        m_energy = Mathf.Clamp(m_energy, 0.0f, 100.0f);
+        m_textEnergy.GetComponent<Text>().text = "Energy: " + m_energy.ToString("f0");
+
+        m_wood = Mathf.Clamp(m_wood, 0.0f, 100.0f);
+        m_textFood.GetComponent<Text>().text = "Wood: " + m_wood.ToString("f0");
+
+        m_food = Mathf.Clamp(m_food, 0.0f, 100.0f);
+        m_textWood.GetComponent<Text>().text = "Food: " + m_food.ToString("f0");
     }
 
     void OnCollisionEnter(Collision coll)
