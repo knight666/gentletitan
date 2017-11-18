@@ -17,7 +17,7 @@ public class ChildController : MonoBehaviour
     public float m_danger = 0.0f;
     public float m_dangerSpeed = 1.0f;
 
-    void Update ()
+    void LateUpdate()
     {
         m_hunger += m_hungerSpeed * Time.deltaTime;
 
@@ -40,5 +40,32 @@ public class ChildController : MonoBehaviour
 
         m_danger = Mathf.Clamp(m_danger, 0.0f, 100.0f);
         m_textDanger.GetComponent<Text>().text = "Danger: " + m_danger.ToString("f0");
+    }
+
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "Player")
+        {
+            var titan = coll.gameObject.GetComponent<TitanController>();
+            if (titan.m_wood > 0.0f)
+            {
+                StartCoroutine(AddWood(titan));
+            }
+        }
+    }
+
+    IEnumerator AddWood(TitanController titan)
+    {
+        while (titan.m_wood > 0.1f)
+        {
+            yield return new WaitForSeconds(0.2f);
+
+            m_cold -= m_coldSpeed * 3.0f;
+            m_textCold.GetComponent<Text>().text = "Cold: " + m_cold.ToString("f0");
+
+            titan.m_wood -= 1.0f;
+        }
+
+        titan.m_wood = 0.0f;
     }
 }
