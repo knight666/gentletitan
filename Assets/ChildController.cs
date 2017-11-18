@@ -58,6 +58,11 @@ public class ChildController : MonoBehaviour
             {
                 StartCoroutine(AddWood(titan));
             }
+
+            if (titan.m_food > 0.0f)
+            {
+                StartCoroutine(AddFood(titan));
+            }
         }
     }
 
@@ -82,5 +87,18 @@ public class ChildController : MonoBehaviour
         }
 
         titan.m_wood = 0.0f;
+    }
+
+    IEnumerator AddFood(TitanController titan)
+    {
+        while (titan.m_food > 0.1f)
+        {
+            yield return new WaitForSeconds(0.2f);
+
+            m_hunger -= m_hungerSpeed * 3.0f;
+            titan.m_food -= 1.0f;
+        }
+
+        titan.m_food = 0.0f;
     }
 }
