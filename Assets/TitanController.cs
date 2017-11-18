@@ -44,4 +44,14 @@ public class TitanController : MonoBehaviour {
             m_miniGame.GetComponent<MiniWood>().Titan = gameObject;
         }
     }
+
+    void OnTriggerExit2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "wood" &&
+            m_miniGame != null)
+        {
+            GameObject.Destroy(m_miniGame);
+            m_miniGame = null;
+        }
+    }
 }
